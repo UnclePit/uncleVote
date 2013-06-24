@@ -1,0 +1,42 @@
+ul.notes-echelle {
+	margin: 0;
+	padding: 0;
+	font: .75em / 1.2 Arial, Helvetica, sans-serif;
+}
+ul.notes-echelle li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	min-width: 20px;
+	min-height: 20px;
+}
+/* Correctif IE6 sur min-width & min-height */
+* html ul.notes-echelle.js li {
+	width: 20px;
+	height: 20px;
+}
+ul.notes-echelle li label {
+	display:block;
+	text-align:center;
+	line-height: 20px;
+	background:url(img/etoiles.gif) center top no-repeat;
+	cursor:pointer;
+}
+ul.notes-echelle li.note-off label {
+	background-position: center -60px;
+}
+/* Cacher les boutons radios */
+ul.notes-echelle.js input {
+	position: absolute;
+	left: -999%;
+}
+/* Amelioration si une image n'a pas été renseigné */
+/* Effet lorsque une note est cochée */
+ ul.notes-echelle li.note-checked {
+	font-weight:bold;
+}
+/* Effet lorsque une note est tabulée au clavier */
+ ul.notes-echelle.js li.note-focus {
+	outline:1px dotted #000;
+}
