@@ -31,4 +31,4 @@ Developer Dependencies
 
 License
 
-See LICENSE.
+http://www.gnu.org/licenses/gpl.txt
